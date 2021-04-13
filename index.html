@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Juan Pablo Galvis Rueda</h1>
+                    <div id="imgYo">
+                        <img src="images/avatar.jpg" height="300px" width="250px" alt="Avatar">
+                    </div>
+                    <div class="card">
+                        <h4>Datos Personales</h4>
+                        <div class="container">
+                            <div class="row rowTableDatosPers">
+                                <div class="col">Código</div>
+                                <div class="col">201922278</div>
+                            </div>
+                            <div class="row rowTableDatosPers">
+                                <div class="col">Cédula</div>
+                                <div class="col">1000940908</div>
+                            </div>
+                            <div class="row rowTableDatosPers">
+                                <div class="col">Edad</div>
+                                <div class="col">19</div>
+                            </div>
+                            <div class="row rowTableDatosPers">
+                                <div class="col">Dirección</div>
+                                <div class="col">Calle 3 # 1-06, Subachoque</div>
+                            </div>
+                            <div class="row rowTableDatosPers">
+                                <div class="col">Teléfono</div>
+                                <div class="col">3046355288</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row rowCursos">
+                        <div class="card">
+                            <h4>Cursos Actuales (Estático)</h4>
+                            <div class="container">
+                                <div class="row headerTableCursos">
+                                    <div class="col">Curso</div>
+                                    <div class="col">Profesor</div>
+                                </div>
+                                <div class="row rowTableCursos">
+                                    <div class="col">Desarrollo de SW en Equipo</div>
+                                    <div class="col">José Bocanegra</div>
+                                </div>
+                                <div class="row rowTableCursos">
+                                    <div class="col">Sistemas Transaccionales</div>
+                                    <div class="col">German Bravo</div>
+                                </div>
+                                <div class="row rowTableCursos">
+                                    <div class="col">Diseño y Análisis de Algoritmos</div>
+                                    <div class="col">Rodrigo Cardoso</div>
+                                </div>
+                                <div class="row rowTableCursos">
+                                    <div class="col">Cálculo Vectorial</div>
+                                    <div class="col">Sergio Adarve</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card">
+                            <h4>Cursos Actuales (Dinamico)</h4>
+                            <form style="margin-top: 5px; margin-bottom: 15px; margin-left: 5px;">
+                                <div class="form-row">
+                                  <div class="col">
+                                      <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                                  </div>
+                                  <div class="col">
+                                      <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                                      </div>
+                                </div>
+                            </form>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                   <tr>
+                                      <th>Curso</th>
+                                      <th>Profesor</th>
+                                      <th>Créditos</th>
+                                   </tr>
+                                </thead>
+                                <tbody id="courses">
+                                </tbody>
+                            </table>
+                            <p style="text-align: center; font-size: larger;">Total credits: <b id="total-credits"></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="scripts/course.js"></script>
+        <script type="module" src="scripts/dataCourses.js"></script>
+        <script type="module" src="scripts/main.js"></script>
+    </body>
+</html>
